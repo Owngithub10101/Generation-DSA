@@ -36,7 +36,10 @@ class Stack{
 		}
 		void print(){
 			Node* temp = top;
-			if(top == NULL) return;
+			if(top == NULL){
+				cout << "Stack is Empty";
+				return;
+			}
 			while(temp != NULL){
 				cout << temp->data << " ";
 				temp = temp->next;
